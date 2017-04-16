@@ -20,6 +20,7 @@ namespace ConvertNumber
             string[] digit2 = { "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY" };
             string[] groupOfThree = { "THOUSAND", "MILLION" };
             string pattern = @"^(\d+)\.(\d{2})$";
+            string[][] threeDigit;
             var regex = new Regex(pattern);
             string number;
             string dollar="";
