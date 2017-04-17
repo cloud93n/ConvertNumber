@@ -81,11 +81,16 @@ namespace ConvertNumber
                 }
 
                 string twoDigit = dollar[1].ToString() + dollar[2].ToString();
+                
 
                 int k = Convert.ToInt16(twoDigit);
+                if (j > 0 && k>0 )
+                {
+                    Console.Write("AND ");
+                }
                 if (k < 20 && k>0)
                 {
-                    Console.Write("AND {0}",numberName[k]);
+                    Console.Write(numberName[k]);
                 }
                 else if (k>=20)
                 {
